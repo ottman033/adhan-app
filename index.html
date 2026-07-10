@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Adhan Times</title>
+</head>
+<body>
+    <div id="search-box">
+        <h1 style="justify-self:center; margin-bottom:20px;">Search for a city</h1>
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="get-weather-btn" onclick="getCity()">Search</button>
+    </div>
+    <header id="head" hidden>
+        <h1>Prayer times</h1><br>
+        <h3 id="date"></h3><br>
+        <h3 id="time"></h3>
+    </header>
+
+    <div id="prayer-times" hidden>
+        <section id="faj">
+            <h2>Fajr</h2>
+            <p id="fajr">Loading...</p>
+        </section>
+        <section id="dhu">
+            <h2>Dhuhr</h2>
+            <p id="dhuhr">Loading...</p>
+        </section>
+        <section id="as">
+            <h2>Asr</h2>
+            <p id="asr">Loading...</p>
+        </section>
+        <section id="magh">
+            <h2>Maghrib</h2>
+            <p id="maghrib">Loading...</p>
+        </section>
+        <section id="ish">
+            <h2>Isha</h2>
+            <p id="isha">Loading...</p>
+        </section>
+    </div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* ===== Global ===== */
+body {
+    background-image: url('img/mosque.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Mulish", sans-serif;
+    color: #2c2c2c;
+}
+
+/* ===== Header ===== */
+header {
+    padding: 40px 20px;
+    text-align: center;
+}
+header h1 {
+    color: #ffffff;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Search box ===== */
+#search-box {
+    margin: 40px auto;
+    text-align: center;
+    background-color: #ffffff5d;
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 30px;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+}
+input {
+    background-color: rgba(255, 255, 255, 0.459);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 10px;
+    width: 80%;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #357abd;
+}
+h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+/* ===== Layout ===== */
+#prayer-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+[hidden]{
+    display: none !important;
+}
+/* ===== Section Cards ===== */
+section {
+    width: 18%;
+    min-width: 150px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px) brightness(1.15);
+    -webkit-backdrop-filter: blur(15px) brightness(1.15);
+    border-radius: 18px;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+p {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    section {
+        width: 90%;
+    }
+}
